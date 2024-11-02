@@ -15,7 +15,12 @@
     <header id="header">
         <section id="section-one">
             <video class="bg-video" muted autoplay loop>
-                <source src="./videos/bg-vid.mp4" type="video/mp4">
+                <!-- <source src="./videos/bg-vid.mp4" type="video/mp4"> -->
+                cloudinary.v2.uploader
+                .upload('bg-vid.mp4', {
+                  folder: '',
+                  resource_type: 'video'})
+                .then(console.log);
             </video>
 
             <!-- LINKS -->
@@ -84,32 +89,62 @@
 
         <div class="slider-container">
             <div class="slide">
-                <img src="./img/product-1.jpg" alt="" class="slide-img">
+                <!-- <img src="./img/product-1.jpg" alt="" class="slide-img"> -->
+                cloudinary.v2.uploader
+                .upload('product-1.jpg', {
+                  folder: '',
+                  resource_type: 'image'})
+                .then(console.log);
                 <h4>Daily Suncreen</h4>
                 <p><a href="#">Shop Suncreen</a></p>
             </div>
             <div class="slide">
-                <img src="img/product-2.jpg" alt="#" class="slide-img">
+                <!-- <img src="img/product-2.jpg" alt="#" class="slide-img"> -->
+                cloudinary.v2.uploader
+                .upload('product-2.jpg', {
+                  folder: '',
+                  resource_type: 'image'})
+                .then(console.log);
                 <h4>Cleanser For Autumn</h4>
                 <p><a href="#">Shop Cleanser</a></p>
             </div>
             <div class="slide">
-                <img src="./img/product-3.jpg" alt="#" class="slide-img">
+                <!-- <img src="./img/product-3.jpg" alt="#" class="slide-img"> -->
+                cloudinary.v2.uploader
+                .upload('product-3.jpg', {
+                  folder: '',
+                  resource_type: 'image'})
+                .then(console.log);
                 <h4>Exfoliator</h4>
                 <p><a href="#">Shop Exfoliator</a></p>
             </div>
             <div class="slide">
-                <img src="img/product-4.jpg" alt="#" class="slide-img">
+                <!-- <img src="img/product-4.jpg" alt="#" class="slide-img"> -->
+                cloudinary.v2.uploader
+                .upload('product-4.jpg', {
+                  folder: '',
+                  resource_type: 'image'})
+                .then(console.log);
                 <h4>Face Toner</h4>
                 <p><a href="#">Shop Face Toner</a></p>
             </div>
             <div class="slide">
-                <img src="./img/product-5.jpg" alt="#" class="slide-img">
+                <!-- <img src="./img/product-5.jpg" alt="#" class="slide-img"> -->
+                cloudinary.v2.uploader
+                .upload('product-5.jpg', {
+                  folder: '',
+                  resource_type: 'image'})
+                .then(console.log);
                 <h4>Moisturizer</h4>
                 <p><a href="#">Shop Moisturizer</a></p>
             </div>
             <div class="slide">
-                <img src="./img/product-6.jpg" alt="#" class="slide-img">
+                <!-- <img src="./img/product-6.jpg" alt="#" class="slide-img"> -->
+                cloudinary.v2.uploader
+                .upload('product-6.jpg', {
+                  folder: '',
+                  resource_type: 'image'})
+                .then(console.log);
                 <h4>Eye Cream</h4>
                 <p><a href="#">Shop Eye Cream</a></p>
             </div>
@@ -128,7 +163,12 @@
             <div id="brand-sec"> 
                 <div class="b-content">
                     <div class="brand-img">
-                        <img src="./img/fast.jpg"  class="brand-img" alt="">
+                        <!-- <img src="./img/fast.jpg"  class="brand-img" alt=""> -->
+                        cloudinary.v2.uploader
+                        .upload('fast.jpg', {
+                          folder: '',
+                          resource_type: 'image'})
+                        .then(console.log);
                     </div>
                     <div class="sub-header">
                         <h4>Fast Delivery</h4>
@@ -141,7 +181,12 @@
                 <div id="second">
                     <div class="b-content">
                         <div>
-                            <img src="./img/organic.jpg"  class="brand-img" alt="">
+                            <!-- <img src="./img/organic.jpg"  class="brand-img" alt=""> -->
+                            cloudinary.v2.uploader
+                            .upload('organic.jpg', {
+                              folder: '',
+                              resource_type: 'image'})
+                            .then(console.log);
                         </div>
                         <div class="sub-header">
                             <h4>100% Organic</h4>
@@ -154,7 +199,12 @@
                 </div>
                 <div class="b-content third">
                     <div>
-                        <img src="./img/effect.jpg" class="brand-img" alt="">
+                        <!-- <img src="./img/effect.jpg" class="brand-img" alt=""> -->
+                        cloudinary.v2.uploader
+                        .upload('effect.jpg', {
+                          folder: '',
+                          resource_type: 'image'})
+                        .then(console.log);
                     </div>
                     <div class="sub-header">
                         <h4>No Side Effect</h4>
@@ -174,13 +224,28 @@
         <div id="subsec-four">
             <div class="story-images">
                 <div id="pic-one">
-                    <img src="./img/hair care set.jpg" alt="">
+                    <!-- <img src="./img/hair care set.jpg" alt=""> -->
+                    cloudinary.v2.uploader
+                    .upload('hair care set.jpg', {
+                      folder: '',
+                      resource_type: 'image'})
+                    .then(console.log);
                 </div>
                 <div id="pic-two">
-                    <img src="img/woman-1.jpg" alt="">
+                    <!-- <img src="img/woman-1.jpg" alt=""> -->
+                    cloudinary.v2.uploader
+                    .upload('woman-1.jpg', {
+                      folder: '',
+                      resource_type: 'image'})
+                    .then(console.log);
                 </div>
                 <div id="pic-three">
-                    <img src="img/woman-2.jpg" alt="">
+                    <!-- <img src="img/woman-2.jpg" alt=""> -->
+                    cloudinary.v2.uploader
+                    .upload('woman-2.jpg', {
+                      folder: '',
+                      resource_type: 'image'})
+                    .then(console.log);
                 </div>
             </div>
             <div id="our-story">
@@ -218,22 +283,42 @@
             </div>
             <div id="all-products">
                 <div class="products">
-                    <img src="./img/wig.jpg" alt="">
+                    <!-- <img src="./img/wig.jpg" alt=""> -->
+                    cloudinary.v2.uploader
+                    .upload('wig.jpg', {
+                      folder: '',
+                      resource_type: 'image'})
+                    .then(console.log);
                     <p>Wigs</p>
                     <p class="price">$588.00</p>
                 </div>
                 <div class="products">
-                    <img src="./img/hair washing.jpg" alt="">
+                    <!-- <img src="./img/hair washing.jpg" alt=""> -->
+                    cloudinary.v2.uploader
+                    .upload('hair washing.jpg', {
+                      folder: '',
+                      resource_type: 'image'})
+                    .then(console.log);
                     <p>Hair Wash</p>
                     <p class="price">$18.00</p>
                 </div>
                 <div class="products">
-                    <img src="./img/cream1.jpg" alt="">
+                    <!-- <img src="./img/cream1.jpg" alt=""> -->
+                    cloudinary.v2.uploader
+                    .upload('cream1.jpg', {
+                      folder: '',
+                      resource_type: 'image'})
+                    .then(console.log);
                     <p>Shampoo</p>
                     <p class="price">$8.00</p>
                 </div>
                 <div class="products">
-                    <img src="./img/cream2.jpg" alt="">
+                    <!-- <img src="./img/cream2.jpg" alt=""> -->
+                    cloudinary.v2.uploader
+                    .upload('cream2.jpg', {
+                      folder: '',
+                      resource_type: 'image'})
+                    .then(console.log);
                     <p>Hair Care Set</p>
                     <p class="price">$58.00</p>
                 </div>
@@ -246,7 +331,12 @@
      <section id="section-six">
         <div id="subsec-six">
             <div id="first-image">
-                <img src="./img/moisturizer.jpg" alt="">
+                <!-- <img src="./img/moisturizer.jpg" alt=""> -->
+                cloudinary.v2.uploader
+                .upload('moisturizer.jpg', {
+                  folder: '',
+                  resource_type: 'image'})
+                .then(console.log);
             </div>
             <div>
                 <div id="our-story">
@@ -263,7 +353,12 @@
                         </button>
                     </div>
                     <div id="second-image">
-                        <img src="img/woman-3.jpg" alt="">
+                        <!-- <img src="img/woman-3.jpg" alt=""> -->
+                        cloudinary.v2.uploader
+                        .upload('woman-3.jpg', {
+                          folder: '',
+                          resource_type: 'image'})
+                        .then(console.log);
                     </div>
                 </div>
             </div>
